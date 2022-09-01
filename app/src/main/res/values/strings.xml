@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DogBreeds</string>
+
+
+
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="lorem_description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+
+    <string name="no_connection">No Connection</string>
+    <string name="search">Search</string>
+    <string name="number_sub_breeds">Number Sub-breeds:</string>
+    <string name="fav_dog">Favourite Dog</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.dog_breeds.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_DetialsFragment"
+            app:destination="@id/dogBreedsDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/dogBreedsDetailsFragment"
+        tools:layout="@layout/fragment_dog_breed_details"
+        android:name="com.example.dog_breeds.ui.dogbreedDetails.DogBreedsDetailsFragment"
+        android:label="@string/app_name" >
+
+        <argument
+            android:name="dogBreed"
+            app:argType="com.example.dog_breeds.domain.model.DogBreed" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noConnectionFragment"
+        android:name="com.example.dog_breeds.ui.connection.NoConnectionFragment"
+        android:label="@string/no_connection" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        tools:layout=""
+        android:name="com.example.dog_breeds.ui.favourite.FavouriteFragment"
+        android:label="@string/fav_dog" />
+
+</navigation>
